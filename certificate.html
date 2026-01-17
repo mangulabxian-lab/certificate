@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certification</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#ccc;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+}
+
+/* ===== HEADER IMAGE ===== */
+.header-img{
+    width:100%;
+    padding:10mm 15mm 5mm;
+    text-align:center;
+}
+
+.header-img img{
+    width:100%;
+    max-height:140px;
+    object-fit:contain;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.main{
+    display:flex;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar{
+    width:65mm;
+    border-right:2px solid #000;
+    padding:8mm 5mm;
+    text-align:center;
+}
+
+.sidebar img{
+    width:100%;
+    height:auto;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    flex:1;
+    padding:18mm 20mm;
+    font-size:13px;
+    line-height:1.8;
+}
+
+/* ===== TITLE ===== */
+.title{
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+/* ===== TEXT ===== */
+.section p{
+    margin-bottom:14px;
+    text-align:justify;
+}
+
+.line{
+    display:inline-block;
+    border-bottom:1px solid #000;
+    min-width:140px;
+}
+
+.long{ min-width:260px; }
+.mid{ min-width:180px; }
+.short{ min-width:80px; }
+
+/* ===== SIGNATURE ===== */
+.signature{
+    margin-top:35px;
+    text-align:left;
+}
+
+.signature .sig-line{
+    width:220px;
+    border-bottom:1px solid #000;
+    margin-bottom:4px;
+}
+
+.signature .name{
+    font-weight:bold;
+}
+
+.signature .title{
+    font-size:12px;
+}
+
+/* ===== FOOTER NOTE ===== */
+.footer-note{
+    font-size:10px;
+    text-align:right;
+    margin-top:40px;
+}
+
+/* ===== PRINT ===== */
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header-img">
+    <img src="header.png" alt="Barangay Header">
+</div>
+
+<div class="main">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="sidebar.png" alt="Barangay Officials">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="title">
+            CERTIFICATION
+        </div>
+
+        <div class="section">
+            <p>
+                This is to certify that
+                <span class="long line"></span>,
+                whose address is at
+                <span class="long line"></span>,
+                is not a resident of this barangay.
+            </p>
+
+            <p>
+                Certify further that such name does not exist / no record in Barangay
+                Kalusugan.
+            </p>
+
+            <p>
+                This certification is being issued for whatever purpose this may serve.
+            </p>
+
+            <p>
+                Issued this
+                <span class="short line"></span>
+                day of
+                <span class="mid line"></span>,
+                20<span class="short line"></span>.
+            </p>
+        </div>
+
+        <div class="signature">
+            <div class="sig-line"></div>
+            <div class="name">HON. ROCKY DELA CRUZ RABANAL</div>
+            <div class="title">Punong Barangay</div>
+        </div>
+
+        <div class="footer-note">
+            Not Valid Without Official Notarial Seal
+        </div>
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>

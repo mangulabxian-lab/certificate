@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certification</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#ccc;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+    padding:16mm 20mm;
+    font-size:13px;
+    line-height:1.6;
+    color:#000;
+}
+
+/* ===== HEADER IMAGE ===== */
+.header-img{
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.header-img img{
+    width:100%;
+    max-height:140px;
+    object-fit:contain;
+}
+
+/* ===== TITLE ===== */
+.title{
+    text-align:center;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin:10px 0 15px;
+}
+
+/* ===== BODY TEXT ===== */
+.section p{
+    margin-bottom:8px;
+    text-align:justify;
+}
+
+.line{
+    display:inline-block;
+    border-bottom:1px solid #000;
+    width:100%;
+}
+
+.line.sm{ width:180px; }
+.line.md{ width:300px; }
+.line.lg{ width:420px; }
+
+/* ===== FORM FIELDS ===== */
+.fields{
+    margin:10px 0;
+}
+
+.field{
+    margin-bottom:6px;
+}
+
+/* ===== CHECKLIST ===== */
+.checklist{
+    margin:8px 0 12px 20px;
+}
+
+.checklist div{
+    margin-bottom:3px;
+}
+
+/* ===== SIGNATURE AREA ===== */
+.signature-area{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:30px;
+}
+
+/* LEFT SIDE */
+.left-sign{
+    font-size:12px;
+}
+
+.officer-block{
+    margin-bottom:12px;
+}
+
+.thumbmark-block{
+    margin:10px 0 14px 0;
+}
+
+.thumb-label{
+    font-size:11px;
+    margin-bottom:4px;
+}
+
+.thumb-box{
+    width:60px;
+    height:80px;
+    border:1px solid #000;
+}
+
+.received-block{
+    margin-top:6px;
+    font-size:12px;
+}
+
+/* RIGHT SIDE */
+.right-sign{
+    text-align:center;
+}
+
+.sig-line{
+    width:220px;
+    border-bottom:1px solid #000;
+    margin:0 auto 5px;
+}
+
+.sig-name{
+    font-weight:bold;
+}
+
+.sig-title{
+    font-size:12px;
+}
+
+/* ===== SEAL ===== */
+.seal{
+    width:90px;
+    height:90px;
+    border:1px solid #000;
+    border-radius:50%;
+    opacity:.4;
+    margin:10px auto 0;
+}
+
+/* ===== FOOTER ===== */
+.footer-note{
+    font-size:10px;
+    text-align:right;
+    margin-top:10px;
+}
+
+.footer{
+    margin-top:25px;
+    font-size:11px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px 15px;
+}
+
+.footer-grid b{
+    display:block;
+}
+
+/* ===== PRINT ===== */
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header-img">
+    <img src="header.png" alt="Barangay Header">
+</div>
+
+<div class="title">CERTIFICATION</div>
+
+<div class="section">
+    <p><b>To Whom It May Concern:</b></p>
+
+    <p>
+        This is to certify that below name is a bonafide resident of this Barangay and
+        who is personally known to me to be a law-abiding citizen and of good moral
+        character. That of my own personal knowledge, he / she has not committed, nor
+        been involved in any kind of unlawful activities in this Barangay.
+    </p>
+
+    <div class="fields">
+        <div class="field">Name: <span class="line lg"></span></div>
+        <div class="field">Birthday/Age: <span class="line md"></span></div>
+        <div class="field">Civil Status: <span class="line md"></span></div>
+        <div class="field">Address: <span class="line lg"></span></div>
+    </div>
+
+    <p>
+        This certification is being issued upon the request of the above-named
+        applicant for:
+    </p>
+
+    <div class="checklist">
+        <div>☐ EMPLOYMENT (Local / Abroad)</div>
+        <div>☐ Application (NEW / RENEWAL) of PWD ID / SENIOR CITIZEN ID / SOLO PARENT ID</div>
+        <div>☐ PHILHEALTH / OPEN BANK ACCOUNT / POSTAL ID / T.I.N.</div>
+        <div>☐ OTHERS: ________________________________</div>
+    </div>
+
+    <p>
+        Date Issued: _______________________________<br>
+        Place Issued: Barangay Kalusugan, Quezon City
+    </p>
+</div>
+
+<!-- SIGNATURE AREA -->
+<div class="signature-area">
+
+    <!-- LEFT -->
+    <div class="left-sign">
+        <div class="officer-block">
+            Signed FOR and BY the approval of PB ROCKY DELA CRUZ RABANAL<br>
+            (In case the Punong Barangay is unavailable)
+            <br><br>
+            HON. ___________________________<br>
+            Kagawad, Officer-On-Duty
+        </div>
+
+        <div class="thumbmark-block">
+            <div class="thumb-label">(Applicant Right Thumb Mark)</div>
+            <div class="thumb-box"></div>
+        </div>
+
+        <div class="received-block">
+            Received by: ___________________________<br>
+            Date: ___________________________
+        </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="right-sign">
+        <div class="sig-line"></div>
+        <div class="sig-name">HON. ROCKY DC. RABANAL</div>
+        <div class="sig-title">Punong Barangay</div>
+        <div class="seal"></div>
+    </div>
+
+</div>
+
+<div class="footer-note">
+    Not Valid Without Official Notarial Seal
+</div>
+
+<!-- OFFICIALS -->
+<div class="footer">
+    <div class="footer-grid">
+        <div><b>HON. ROCKY DC. RABANAL</b>Punong Barangay</div>
+        <div><b>Kgd. Roderick M. Hara</b>Livelihood, Cooperative, Industry & Senior Citizens</div>
+        <div><b>Kgd. Christopher C. Serrano</b>Drug Abuse, Peace & Order, Public Welfare</div>
+        <div><b>Kgd. Margaret Lyra Marquez</b>Health, Education, Gender & Family Affairs</div>
+
+        <div><b>Kgd. Ferdinand D. Barbosa</b>Ethics, Good Government & Human Rights</div>
+        <div><b>Kgd. Elissa R. Payuno</b>Infrastructure, Urban Poor & Public Service</div>
+        <div><b>Kgd. Robin C. Potalia</b>Appropriations, Budget, Finance & Ways</div>
+        <div><b>Kgd. Reynaldo SJ. Seva</b>Sanitation, Waste Management & Environment</div>
+
+        <div><b>Secretary</b>Corazon L. Prado</div>
+        <div><b>Treasurer</b>Fritzie U. Ulpindo</div>
+        <div><b>BPSO Ex-O</b>Elmer Z. Pinca</div>
+        <div><b>SK Chairman</b>John Vincent D. Abaño</div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
