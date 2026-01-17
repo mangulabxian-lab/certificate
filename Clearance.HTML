@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Barangay Clearance – Business</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#eee;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+    padding:18mm 22mm;
+    color:#000;
+}
+
+/* ================= IMAGE HEADER ================= */
+.header-img{
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.header-img img{
+    width:100%;
+    max-height:140px;
+    object-fit:contain;
+}
+
+/* ================= DIVIDER ================= */
+.hr{
+    border-bottom:1.5px solid #000;
+    margin:10px 0 14px;
+}
+
+/* ================= TITLE ================= */
+.title{
+    text-align:center;
+}
+
+.title .main{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.title .sub{
+    font-size:13px;
+}
+
+.control{
+    text-align:right;
+    font-size:12px;
+    margin-top:6px;
+}
+
+/* ================= BODY ================= */
+.body{
+    font-size:13px;
+    line-height:1.6;
+    margin-top:14px;
+}
+
+.fields{
+    margin:12px 0 12px 35px;
+}
+
+.field{
+    margin-bottom:6px;
+}
+
+.line-fill{
+    display:inline-block;
+    width:260px;
+    border-bottom:1px solid #000;
+}
+
+/* ================= DATE ================= */
+.date-issued{
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    margin-top:20px;
+}
+
+.valid-line{
+    margin-top:8px;
+    font-size:13px;
+    color:red;
+}
+
+.valid-line .line-fill{
+    border-bottom:1px solid red;
+}
+
+/* ================= SIGNATURE NAME ================= */
+.pb-signature{
+    text-align:center;
+    margin-top:30px;
+}
+
+.pb-name{
+    font-weight:bold;
+    color:#0b2a6f;
+}
+
+.pb-title{
+    margin-top:3px;
+}
+
+/* ================= DIVIDER ================= */
+.thick-line{
+    border:1.5px solid #000;
+    margin:15px 0;
+}
+
+/* ================= PAYMENT + SIGNATURE ================= */
+.payment-signature{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    font-size:12px;
+    margin-bottom:15px;
+}
+
+.payment-left div,
+.signature-right div{
+    margin-bottom:5px;
+}
+
+.sig-note{
+    font-size:11px;
+    font-style:italic;
+}
+
+.pay-line{
+    display:inline-block;
+    width:180px;
+    border-bottom:1px solid #000;
+}
+
+/* ================= OFFICIALS ================= */
+.officials-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px 20px;
+    font-size:11px;
+    margin-top:15px;
+}
+
+.officials-grid b{
+    color:#0b2a6f;
+}
+
+/* ================= FOOTER ================= */
+.bottom-footer{
+    text-align:right;
+    font-size:11px;
+    margin-top:15px;
+    border-top:1px solid #000;
+    padding-top:4px;
+}
+
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- IMAGE HEADER -->
+<div class="header-img">
+    <img src="header2.png" alt="Barangay Kalusugan Header">
+</div>
+
+<div class="hr"></div>
+
+<!-- TITLE -->
+<div class="title">
+    <div class="main">BARANGAY CLEARANCE</div>
+    <div class="sub">For Business</div>
+</div>
+
+<div class="control">
+    Control Number: ____________________
+</div>
+
+<!-- BODY -->
+<div class="body">
+    <p><b>To Whom It May Concern:</b></p><br>
+
+    <p>
+        This is to certify that the undersigned approved / disapproved the
+        application for a permit to operate / renew the business of:
+    </p>
+
+    <div class="fields">
+        <div class="field">Name of Proprietor: <span class="line-fill"></span></div>
+        <div class="field">Business Name: <span class="line-fill"></span></div>
+        <div class="field">Nature / Type of Business: <span class="line-fill"></span></div>
+        <div class="field">Address of Business: <span class="line-fill"></span></div>
+    </div>
+
+    <p>
+        It is further certified that the subject business establishment is nuisance /
+        not nuisance to public order and safety. Moreover, the above-named applicant
+        pledge to abide with existing laws, ordinances, rules and regulations
+        appertaining to said business.
+    </p><br>
+
+    <p>
+        This is being issued upon the request of the above-named applicant for
+        presentation to the Business Permit and Licensing Office, this City, prior
+        to the issuance of any license or permit for said business activity pursuant
+        to Chapter II, Art. IV, Section 152, Par. c of the Local Government Code.
+    </p>
+</div>
+
+<!-- DATE -->
+<div class="date-issued">
+    <span><b>Date Issued:</b> <span class="line-fill"></span></span>
+    <span>in Barangay Kalusugan, Quezon City</span>
+</div>
+
+<div class="valid-line">
+    Valid on the date of issue until <span class="line-fill"></span>
+</div>
+
+<!-- SIGNATURE -->
+<div class="pb-signature">
+    <div class="pb-name">HON. ROCKY DELA CRUZ RABANAL</div>
+    <div class="pb-title">Punong Barangay</div>
+</div>
+
+<hr class="thick-line">
+
+<!-- PAYMENT + SIGNATURE -->
+<div class="payment-signature">
+    <div class="payment-left">
+        <div>Amount Paid: <span class="pay-line"></span></div>
+        <div>Date Paid: <span class="pay-line"></span></div>
+        <div>O.R. Number: <span class="pay-line"></span></div>
+        <div>Received By: <span class="pay-line"></span></div>
+    </div>
+
+    <div class="signature-right">
+        <div>Received By:</div>
+        <div class="pay-line" style="width:220px;"></div>
+        <div class="sig-note">Signature over Printed Name of Applicant/Representative</div>
+        <div>Date: <span class="pay-line" style="width:100px;"></span></div>
+    </div>
+</div>
+
+<!-- OFFICIALS -->
+<div class="officials-grid">
+    <div><b>Kgd. Roderick M. Hara</b><br>Committee on Livelihood, Cooperative, Industry, and Senior Citizens Affairs</div>
+    <div><b>Kgd. Christopher C. Serrano</b><br>Committee on Drug Abuse, Peace and Order, Public Welfare and Safety</div>
+    <div><b>Kgd. Margaret Lyra Marquez</b><br>Committee on Health, Education, Gender and Development, and Family Affairs</div>
+    <div><b>Kgd. Ferdinand D. Barbosa</b><br>Committee on Ethics and Good Government, Human Rights Advocacy and Justice</div>
+    <div><b>Kgd. Elissa R. Payuno</b><br>Committee on Infrastructure, Urban Poor, Public Service, and Communication</div>
+    <div><b>Kgd. Robin C. Potalia</b><br>Committee on Appropriations, Budget, Finance, Ways and Means</div>
+    <div><b>Kgd. Reynaldo SJ. Seva</b><br>Committee on Sanitation, Waste Management, and Environmental Protection</div>
+    <div><b>SK Chairman</b><br>John Vincent D. Abaño</div>
+    <div><b>Secretary</b><br>Corazon L. Prado</div>
+    <div><b>Treasurer</b><br>Fritzie F. Ulpindo</div>
+    <div><b>BPSO Ex-O</b><br>Elmer Z. Pinca</div>
+</div>
+
+<div class="bottom-footer">
+    Not Valid Without Official Notarial Seal
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate of Residency</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#ccc;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+    padding:18mm 22mm;
+    font-size:13px;
+    line-height:1.6;
+    color:#000;
+}
+
+/* ===== HEADER IMAGE ===== */
+.header-img{
+    width:100%;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.header-img img{
+    width:100%;
+    max-height:140px;
+    object-fit:contain;
+}
+
+/* ===== TITLE ===== */
+.title{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+/* ===== BODY ===== */
+.section p{
+    margin-bottom:10px;
+    text-align:justify;
+}
+
+.line{
+    display:inline-block;
+    border-bottom:1px solid #000;
+    min-width:120px;
+}
+
+.long{ min-width:260px; }
+.mid{ min-width:180px; }
+.short{ min-width:90px; }
+
+/* ===== ISSUED DATE ===== */
+.issued{
+    margin-top:12px;
+}
+
+/* ===== PHOTO + SIGNATURE ===== */
+.photo-sign{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-top:25px;
+}
+
+.photo-boxes{
+    display:flex;
+    gap:20px;
+}
+
+.box{
+    width:70px;
+    height:90px;
+    border:1px solid #000;
+}
+
+.box-label{
+    text-align:center;
+    font-size:11px;
+    margin-top:4px;
+}
+
+.signature{
+    text-align:center;
+    margin-top:40px;
+}
+
+.signature .name{
+    font-weight:bold;
+    margin-top:5px;
+}
+
+.signature .title{
+    font-size:12px;
+}
+
+/* ===== VALIDITY ===== */
+.validity{
+    margin-top:15px;
+    font-size:12px;
+}
+
+/* ===== NOTES ===== */
+.notes{
+    margin-top:10px;
+    font-size:11px;
+}
+
+/* ===== SEAL ===== */
+.seal-area{
+    text-align:right;
+    margin-top:-60px;
+}
+
+.seal{
+    width:90px;
+    height:90px;
+    border:1px solid #000;
+    border-radius:50%;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:10px;
+    opacity:0.5;
+}
+
+/* ===== FOOTER OFFICIALS ===== */
+.footer{
+    margin-top:30px;
+    font-size:11px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px 18px;
+}
+
+.footer-grid b{
+    display:block;
+}
+
+/* ===== PRINT ===== */
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- HEADER IMAGE -->
+<div class="header-img">
+    <img src="header.png" alt="Barangay Kalusugan Header">
+</div>
+
+<div class="title">
+    CERTIFICATE OF RESIDENCY
+</div>
+
+<div class="section">
+    <p><b>TO WHOM IT MAY CONCERN:</b></p>
+
+    <p>
+        This is to certify that
+        <span class="long line"></span>,
+        born on
+        <span class="mid line"></span>,
+        <span class="short line"></span>,
+        Single, is a bonafide resident at
+        <span class="long line"></span>,
+        Barangay Kalusugan, Quezon City since 2023 up to present.
+    </p>
+
+    <p>
+        The undersigned has certified that after a reasonable inquiry, I have verified
+        the authenticity of barangay residency showing that the applicant has been
+        residing in the barangay for at least six (6) months prior to the application
+        of this Affidavit of Residency.
+    </p>
+
+    <p>
+        This certification is issued upon the request of the above-named person as a
+        supporting document for
+        <b>QC ID purpose</b>.
+    </p>
+
+    <p class="issued">
+        Issued this
+        <span class="short line"></span>
+        day of
+        <span class="mid line"></span>,
+        <span class="short line"></span>
+        at Barangay Kalusugan, District IV, Quezon City.
+    </p>
+</div>
+
+<!-- PHOTO + SIGNATURE -->
+<div class="photo-sign">
+
+    <div>
+        <div class="photo-boxes">
+            <div>
+                <div class="box"></div>
+                <div class="box-label">APPLICANT PHOTO</div>
+            </div>
+            <div>
+                <div class="box"></div>
+                <div class="box-label">APPLICANT THUMBMARK</div>
+            </div>
+        </div>
+
+        <div class="validity">
+            Issued at: Barangay Kalusugan Hall<br>
+            Date Issued: September 12, 2025<br>
+            Valid Until: March 12, 2026 (6 months)
+        </div>
+    </div>
+
+    <div>
+        <div class="signature">
+            <div class="line mid"></div>
+            <div class="name">HON. ROCKY DC. RABANAL</div>
+            <div class="title">Punong Barangay</div>
+        </div>
+    </div>
+</div>
+
+<!-- SEAL -->
+<div class="seal-area">
+    <div class="seal">OFFICIAL SEAL</div>
+</div>
+
+<!-- NOTES -->
+<div class="notes">
+    <p>• This certification is not valid without official barangay dry seal.</p>
+    <p>• Self affixing clearance signature is strictly prohibited.</p>
+    <p>• Officials and applicants shall be liable for falsification of documents and be held liable for administrative / criminal liabilities.</p>
+
+    <p style="margin-top:6px;">
+        Prepared by: Maria Virginia Abaya<br>
+        Reference Number: KC-289-25<br>
+        Document File: ULC-2025-01
+    </p>
+
+    <p style="text-align:right;font-weight:bold;">
+        Not Valid Without Official Notarial Seal
+    </p>
+</div>
+
+<!-- OFFICIALS -->
+<div class="footer">
+    <div class="footer-grid">
+        <div>
+            <b>HON. ROCKY DC. RABANAL</b>
+            Punong Barangay
+        </div>
+        <div>
+            <b>Kgd. Roderick M. Hara</b>
+            Committee on Livelihood, Cooperative, Industry, and Senior Citizens Affairs
+        </div>
+        <div>
+            <b>Kgd. Christopher C. Serrano</b>
+            Committee on Drug Abuse, Peace and Order, Public Welfare and Safety
+        </div>
+        <div>
+            <b>Kgd. Margaret Lyra Marquez</b>
+            Committee on Health, Education, Gender and Development, and Family Affairs
+        </div>
+
+        <div>
+            <b>Kgd. Ferdinand D. Barbosa</b>
+            Committee on Ethics and Good Government, Human Rights Advocacy and Justice
+        </div>
+        <div>
+            <b>Kgd. Elissa R. Payuno</b>
+            Committee on Infrastructure, Urban Poor, Public Service and Communication
+        </div>
+        <div>
+            <b>Kgd. Robin C. Potalia</b>
+            Committee on Appropriations, Budget, Finance, Ways and Means
+        </div>
+        <div>
+            <b>Kgd. Reynaldo SJ. Seva</b>
+            Committee on Sanitation, Waste Management and Environmental Protection
+        </div>
+
+        <div>
+            <b>Secretary</b>
+            Corazon L. Prado
+        </div>
+        <div>
+            <b>Treasurer</b>
+            Fritzie U. Ulpindo
+        </div>
+        <div>
+            <b>BPSO Ex-O</b>
+            Elmer Z. Pinca
+        </div>
+        <div>
+            <b>SK Chairman</b>
+            John Vincent D. Abaño
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Certificate of Residency</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#eee;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+    border:1px solid #000;
+}
+
+/* ===== HEADER IMAGE ===== */
+.header-img{
+    width:100%;
+    text-align:center;
+    padding:10mm 15mm 5mm;
+}
+
+.header-img img{
+    width:100%;
+    max-height:140px;
+    object-fit:contain;
+}
+
+/* ===== MAIN WRAPPER ===== */
+.main{
+    display:flex;
+}
+
+/* ===== LEFT SIDEBAR ===== */
+.sidebar{
+    width:65mm;
+    border-right:2px solid #0b2a6f;
+    padding:10mm 5mm;
+    text-align:center;
+}
+
+.sidebar img{
+    width:100%;
+    height:auto;
+}
+
+/* ===== CONTENT ===== */
+.content{
+    flex:1;
+    padding:15mm 20mm;
+    font-size:14px;
+    line-height:1.8;
+}
+
+/* ===== TITLE ===== */
+.header-text{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.header-text .top{
+    font-size:13px;
+}
+
+.header-text .title{
+    font-size:18px;
+    font-weight:bold;
+    margin-top:5px;
+}
+
+/* ===== BODY ===== */
+.body p{
+    margin-bottom:14px;
+    text-align:justify;
+}
+
+.line{
+    display:inline-block;
+    border-bottom:1px solid #000;
+    width:200px;
+    vertical-align:bottom;
+}
+
+.small-line{
+    width:120px;
+}
+
+/* ===== SIGNATURE ===== */
+.signature{
+    margin-top:40px;
+    text-align:center;
+}
+
+.signature .name{
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.signature .title{
+    font-size:13px;
+}
+
+/* ===== PRINT ===== */
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+    .page{
+        border:none;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- TOP HEADER IMAGE -->
+<div class="header-img">
+    <img src="header2.png" alt="Barangay Kalusugan Header">
+</div>
+
+<!-- MAIN BODY -->
+<div class="main">
+
+    <!-- LEFT SIDEBAR IMAGE -->
+    <div class="sidebar">
+        <img src="sidebar.png" alt="Barangay Officials">
+    </div>
+
+    <!-- CERTIFICATE CONTENT -->
+    <div class="content">
+
+        <div class="header-text">
+            <div class="top">Republic of the Philippines</div>
+            <div class="top">Quezon City</div>
+            <div class="title">CERTIFICATE OF RESIDENCY</div>
+        </div>
+
+        <div class="body">
+            <p><b>To Whom This May Concern:</b></p>
+
+            <p>
+                This is to certify that
+                <span class="line"></span>,
+                <span class="small-line line"></span> years old,
+                <span class="line"></span>,
+                is a bonafide resident of Quezon City, this barangay.
+            </p>
+
+            <p>
+                Further certify that
+                <span class="line"></span>
+                is a resident in this barangay for
+                <span class="small-line line"></span>
+                years / months now up to present.
+            </p>
+
+            <p>
+                That of my own personal knowledge he / she did not commit any unlawful
+                acts and has no derogatory record in our barangay.
+            </p>
+
+            <p>
+                This certification is being issued upon the request of the above-named
+                applicant for
+                <span class="line"></span>.
+            </p>
+
+            <p>
+                Issued this
+                <span class="small-line line"></span>
+                day of
+                <span class="line"></span>,
+                <span class="small-line line"></span>
+                in Barangay Kalusugan, Quezon City.
+            </p>
+        </div>
+
+        <div class="signature">
+            <div class="name">HON. ROCKY DC. RABANAL</div>
+            <div class="title">Punong Barangay</div>
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+</html>
