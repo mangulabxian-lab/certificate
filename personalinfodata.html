@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Information Data</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:"Times New Roman", serif;
+}
+
+body{
+    background:#ccc;
+    padding:20px;
+}
+
+.page{
+    width:210mm;
+    min-height:297mm;
+    background:#fff;
+    margin:auto;
+    padding:18mm 20mm;
+    font-size:12px;
+    color:#000;
+}
+
+/* ===== HEADER ===== */
+.header{
+    text-align:center;
+    margin-bottom:14px;
+}
+
+.header .barangay{
+    font-weight:bold;
+    font-size:14px;
+}
+
+.header .area{
+    font-size:12px;
+}
+
+.header .title{
+    font-weight:bold;
+    margin-top:10px;
+    font-size:13px;
+}
+
+/* ===== TABLE-LIKE FORM ===== */
+.form{
+    margin-top:10px;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-bottom:1px solid #000;
+}
+
+.row.single{
+    grid-template-columns:1fr;
+}
+
+.cell{
+    padding:4px 6px;
+    border-right:1px solid #000;
+}
+
+.row .cell:last-child{
+    border-right:none;
+}
+
+.label{
+    font-size:11px;
+}
+
+.value{
+    margin-top:2px;
+    height:14px;
+}
+
+/* ===== FULL-WIDTH ROW ===== */
+.full{
+    border-bottom:1px solid #000;
+    padding:4px 6px;
+}
+
+/* ===== YES / NO QUESTIONS ===== */
+.question{
+    border-bottom:1px solid #000;
+    padding:4px 6px;
+    font-size:11px;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    margin-top:10px;
+}
+
+.footer-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    border-bottom:1px solid #000;
+}
+
+.footer-cell{
+    padding:4px 6px;
+}
+
+.signature{
+    text-align:right;
+    margin-top:6px;
+    font-size:11px;
+}
+
+@media print{
+    body{
+        background:#fff;
+        padding:0;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page">
+
+<!-- HEADER -->
+<div class="header">
+    <div class="barangay">BARANGAY KALUSUGAN</div>
+    <div class="area">Area 21, District IV</div>
+    <div class="title">PERSONAL INFORMATION DATA</div>
+</div>
+
+<!-- FORM -->
+<div class="form">
+
+    <div class="row">
+        <div class="cell">
+            <div class="label">PANGALAN:<br><i>Name</i></div>
+            <div class="value"></div>
+        </div>
+        <div class="cell">
+            <div class="label">EDAD:<br><i>Age</i></div>
+            <div class="value"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="cell">
+            <div class="label">KATAYUANG SIBIL:<br><i>Civil Status</i></div>
+            <div class="value"></div>
+        </div>
+        <div class="cell">
+            <div class="label">KASARIAN:<br><i>Gender</i></div>
+            <div class="value"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="cell">
+            <div class="label">TRABAHO:<br><i>Occupation</i></div>
+            <div class="value"></div>
+        </div>
+        <div class="cell">
+            <div class="label">RELIHIYON:<br><i>Religion</i></div>
+            <div class="value"></div>
+        </div>
+    </div>
+
+    <div class="full">
+        <div class="label">PANGALAN NG ASAWA:<br><i>Name of Spouse</i></div>
+    </div>
+
+    <div class="full">
+        <div class="label">PROBINSIYA:<br><i>Province</i></div>
+    </div>
+
+    <div class="full">
+        <div class="label">ARAW NG KAPANGANAKAN:<br><i>Date of Birth</i></div>
+    </div>
+
+    <div class="full">
+        <div class="label">LUGAR NG KAPANGANAKAN:<br><i>Place of Birth</i></div>
+    </div>
+
+    <div class="full">
+        <div class="label">TRABAHO/PROPESYON SA KASALUKUYAN:<br><i>Occupation/Profession at present</i></div>
+    </div>
+
+    <div class="question">IKAW BA AY REHISTRADONG BOTANTE NG BRGY. KALUSUGAN?<br><i>Are you a registered voter of Barangay Kalusugan?</i></div>
+
+    <div class="question">ILANG TAON KA NG NANINIRAHAN SA BRGY. KALUSUGAN?<br><i>How long have you been residing in Barangay Kalusugan?</i></div>
+
+    <div class="question">IKAW BA AY MAY-ARI NG BAHAY?<br><i>Are you a house owner?</i></div>
+
+    <div class="question">IKAW BA AY NANGUNGUPAHAN?<br><i>Are you a tenant?</i></div>
+
+    <div class="question">KUNG OO, ANO ANG PANGALAN NG MAY-ARI NG BAHAY?<br><i>If yes, what is the name of the house owner?</i></div>
+
+    <div class="question">IKAW BA AY NAMINIBILANG KASAMBAHAY?<br><i>Are you a house helper?</i></div>
+
+    <div class="question">KUNG OO, ANO ANG PANGALAN NG IYONG AMO?<br><i>If yes, what is the name of your employer?</i></div>
+
+    <div class="question">IKAW BA AY NAKIKITIRA SA KAMAG-ANAK?<br><i>Are you living with a relative?</i></div>
+
+    <div class="question">KUNG OO, ANO ANG PANGALAN NG IYONG KAMAG-ANAK?<br><i>If yes, what is the name of your relative?</i></div>
+
+    <div class="question">KAANO-ANO MO ANG KAMAG-ANAK NA IYONG TINITULUYAN?<br><i>Relationship to the relative?</i></div>
+
+    <div class="question">ANO ANG PAGGAMITAN MO NG CLEARANCE?<br><i>Purpose of applying for a clearance?</i></div>
+
+    <!-- FOOTER -->
+    <div class="footer-row">
+        <div class="footer-cell">
+            CONTACT NUMBER:
+        </div>
+        <div class="footer-cell">
+            LAGDA:<br><i>Signature</i>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>
